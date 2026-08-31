@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Product Page Template</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="../index.html">Control Panel&nbsp;</a></nav>
+    <div class="container mt-2">
+      <div class="row">
+        <div class="col-12">
+          <div class="jumbotron">
+            <h1 class="text-center">Server Analytics&nbsp;</h1>
+			 
+            <hr>
+<hr>
+<div class="col-xl-6">
+  <div class="row">
+    <div class="col">
+      <p class="text-center">Open Ports&nbsp;</p>
+      <div id="firewall_ports">
+		<iframe src="console/port_console.html" width="400"></iframe>
+		</div>
+</div>
+<div class="col">
+  <p class="text-center">Firewall</p>
+<p id="firewall_status" class="text-center">&nbsp;</p>
+</div>
+    </div>
+</div>
+<hr>
+<hr>
+            <div class="col">
+              <div class="row">
+                <div class="col">
+                  <p>Current Backups</p>
+<div id="backups">
+  <iframe src="console/backup_console.html"></iframe>
+  &nbsp;</div>
+                &nbsp;</div>
+                <div class="col">&nbsp;</div> 
+              &nbsp;</div>
+&nbsp;</div>
+            <hr>
+            <p class="text-center">&nbsp;DDOS Protection:&nbsp; &nbsp;&nbsp;</p>
+            <hr>
+            <p class="text-center">Additional Ports:&nbsp; &nbsp;</p>
+          </div>
+</div>
+      </div>
+    </div>
+<hr>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="js/firewall.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>

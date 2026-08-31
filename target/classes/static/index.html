@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zinxs Hosting</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+  <style type="text/css">
+	.inline-1 {
+}
+    </style>
+	<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+	<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+	<link href="jQueryAssets/jquery.ui.button.min.css" rel="stylesheet" type="text/css">
+	<link href="jQueryAssets/jquery.ui.slider.min.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+  <script src="jQueryAssets/jquery.ui-1.10.4.button.min.js"></script>
+  <script src="jQueryAssets/jquery.ui-1.10.4.slider.min.js"></script>
+  </head>
+<body>
+<div class="container-fluid">
+  	  <div class="container"> </div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-xl-4"><div id="accordion1" role="tablist">
+
+
+    <div class="card col-xl-10">
+      <div class="card-header" role="tab" id="headingThree1">
+        <h5 class="mb-0"> <a class="nav-link" href="../filemanager/index.html" > File Manager&nbsp; </a> </h5>
+      </div>
+      <div id="collapseThree1" class="collapse" role="tabpanel" aria-labelledby="headingThree1" data-parent="#accordion1">
+        <div class="card-body"><button type="button" class="btn btn-sm border-dark">File Manager</button></div>
+      </div>
+    </div>
+<div class="card col-xl-10">
+  <div class="card-header" role="tab" id="headingSeven1">
+        <h5 class="mb-0"> <a class="nav-link" href="../Console/index.html"> Console</a> </h5>
+      </div>
+      <div id="collapseSeven1" class="collapse" role="tabpanel" aria-labelledby="headingSven1" data-parent="#accordion1">
+        <div class="card-body">
+          <button type="button" class="btn btn-sm border-dark">Console</button><br>
+		<div class="Chatgraph">ConsoleIframe (for later)</div>
+        </div>
+      </div>
+  </div>
+	<div class="card col-xl-10">
+      <div class="card-header" role="tab" id="headingFour1">
+        <h5 class="mb-0"> <a class="nav-link" href="Server_Analytics/server_analytics.html" >Server Analytics&nbsp;&nbsp;</a> </h5>
+      </div>
+      <div id="collapseFour1" class="collapse" role="tabpanel" aria-labelledby="headingThree1" data-parent="#accordion1">
+        <div class="card-body">
+          <div id="Checkboxes1">
+			<ol>Server Settings</ol>
+            <ss class="col-xl-4">
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-secondary">Reset World</button>
+                <button type="button" class="btn btn-secondary disabled">Reset Entire Server</button>
+				  <button type="button" class="btn btn-secondary active">Other Utilities<img src="down.png"></button>
+              </div>
+            </ss>
+			<ol>Player slots</ol>
+            <ol class="col-xl-10">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1"></label>
+                  <input type="players" placeholder="Players">
+			    </div>
+              </form>
+            </ol>
+			<ol class="col-xl-10">Server Version</ol>
+            <ol class="col-xl-12">
+				<form>
+				  <div class="form-group">
+				    <input typeplaceholder="Version">
+				  </div>
+			    </form>
+				<button type="button" class="btn btn-sm border-dark">JAR Preinstall Menu</button>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+    </div>
+	<div class="card col-xl-10">
+      <div class="card-header" role="tab" id="headingFive1">
+        <h5 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapseFive1" role="button" aria-expanded="false" aria-controls="collapseFive1"> &nbsp; Additional Features</a> </h5>
+      </div>
+      <div id="collapseFive1" class="collapse" role="tabpanel" aria-labelledby="headingFive1" data-parent="#accordion1">
+        <div class="card-body">
+		  <ol>
+		    <button type="button" class="btn btn-sm border-dark">Additional Ports</button>
+		  </ol>
+			<ol>
+			  <button type="button" class="btn btn-sm border-dark">Firewalls</button>
+			</ol>
+			<ol>
+			  <button type="button" class="btn btn-sm border-dark">DDoS Protection</button>
+			</ol>
+			<ol>
+			  <button type="button" class="btn btn-sm border-dark">MySQL</button>
+			</ol>
+			<ol>
+			  <button type="button" class="btn btn-sm border-dark">Backups</button>
+			</ol>
+	    </div>
+      </div>
+    </div>
+</div></div>
+	   <div class="col-xl-8">
+	     <div class="jumbotron">
+	       <h1 class="servername">Server Name</h1>
+	       <p class="players">
+	         <ella>
+
+		   </ella></p>
+			<p></p>
+	       <hr class="my-4">
+
+
+
+	<div class="row">
+	  <div class="col-xl-6"><cpu id="cpu"></cpu></div>
+	  <div class="col-xl-6"><mem id="memory"></mem></div>
+	  </div>
+         </div>
+</div>
+</div>
+  </div>
+
+
+  <!-- body code goes here -->
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-3.4.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap-4.4.1.js"></script>
+<script src="js/players.js"></script>
+<script src="js/cpu.js"></script>
+<script src="js/mem.js"></script>
+<script type="text/javascript">
+
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Untitled Document</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light">
+  
+<img src="../../../../../Downloads/zinx.png" alt="Trulli" style="width:8%">
+
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item active"> <a class="nav-link" href="../index.html">Control Panel<span class="sr-only">C(current)</span></a></li>
+  </ul>
+</nav>
+
+<div id="overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);">
+  <div id="moveFormContainer" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; padding: 20px;">
+    <form id="moveForm">
+      <label for="destinationDirectory">Enter destination directory:</label>
+      <input type="text" id="destinationDirectory" name="destinationDirectory" required>
+      <input type="submit" value="Move Files">
+    </form>
+  </div>
+</div>
+	  
+
+<form id="uploadForm">
+<input type="file" id="fileInput" name="file" acccept= "file_extension/*">
+  <input type="submit" value="Upload File">
+</form>
+
+<form id="uploadFolderForm">
+<input type="file" name="folder" webkitdirectory>
+  <input type="submit" value="Upload Folder">
+</form>
+	  
+<div class="container"><div id="files"></div></div>
+<script src="filemanager.js"></script>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-3.4.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.4.1.js"></script>
+</body>
+</html>
