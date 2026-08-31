@@ -1,0 +1,28 @@
+server:
+  port: 8091
+spring:
+  application:
+    name: instance
+  cloud:
+    zookeeper:
+      discovery:
+        enabled: true
+  logging:
+    level:
+      org.apache.zookeeper.ClientCnxn: WARN
+  datasource:
+    password: 21387866
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    driver: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+
+
+
